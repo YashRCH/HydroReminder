@@ -1,0 +1,122 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F7FA"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HydroReminder 💧"
+            android:textSize="28sp"
+            android:textColor="#0277BD"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:max="100"
+            android:progress="40"
+            android:progressDrawable="@drawable/progress_circular" />
+
+        <ImageView
+            android:id="@+id/dropletIcon"
+            android:layout_width="115dp"
+            android:layout_height="109dp"
+            android:layout_marginTop="-180dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="Water Icon"
+            android:src="@drawable/ic_water_drop" />
+
+        <TextView
+            android:id="@+id/mlCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water Intake: 0ml"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#004D40"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/requiredIntake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Required Intake: 0ml"
+            android:textSize="18sp"
+            android:textColor="#00796B"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/ageInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#040404"
+            android:hint="Enter Age"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/heightInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#000000"
+            android:hint="Enter Height (cm)"
+            android:inputType="number"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/sexSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heightInput"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/spinner_background"
+            android:entries="@array/sex_array"
+            android:padding="12dp"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/updateGoalButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Goal"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#0288D1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/motivationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stay Hydrated. Stay Healthy."
+            android:textSize="18sp"
+            android:textColor="#006064"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/drinkButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#00BCD4"
+            android:text="I Drank Water!"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
